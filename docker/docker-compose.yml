@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+    php-dev-test:
+        build:
+            context: php
+        ports:
+            - 8123:80
+        volumes:
+            - ../:/var/www/html
